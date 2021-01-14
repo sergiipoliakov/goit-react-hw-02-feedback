@@ -36,3 +36,42 @@ button {
   cursor: pointer;
   font-family: inherit;
 }
+
+.Section {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #e1efff;
+  text-align: center;
+}
+.Section-title {
+  padding: 20px 20px 10px 20px;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0.6em;
+  text-transform: uppercase;
+}
+.Notification {
+  padding: 20px 20px 10px 20px;
+}
+.CounterControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CounterControls-button {
+  margin: 10px;
+}
+
+.Statistics {
+  display: flex;
+  flex-direction: column;
+}
+.Statistics-item {
+  margin-bottom: 10px;
+}
+.Statistics-item:last-child {
+  margin-bottom: 0px;
+}

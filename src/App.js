@@ -12,7 +12,8 @@ export default class App extends Component {
   };
 
   handleChange = e => {
-    const field = e.target.textContent.toLowerCase();
+    const field = e.target.name;
+
     this.setState(prevState => {
       return {
         [field]: this.state[field] + 1,
