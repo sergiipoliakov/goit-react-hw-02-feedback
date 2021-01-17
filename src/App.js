@@ -52,7 +52,10 @@ export default class App extends Component {
 
     return (
       <Section title="Please leave the feedback">
-        <FeedbackOptions onLeaveFeedback={this.handleChange} />
+        <FeedbackOptions
+          options={Object.keys(this.state)}
+          onLeaveFeedback={this.handleChange}
+        />
         {this.countTotalFeedback() > 0 ? (
           <Statistics
             good={good}
